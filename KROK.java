@@ -1,20 +1,20 @@
-import java.lang.System;
 
 public class KROK{
 
-    public static void main(String[] args){
-        for (int i = 0; i < 100; i++){
-            if (i % 3 == 0) {
-                if (i % 5 == 0)
-                    System.out.println("FizzBuzz");
-                else
-                    System.out.println("Fizz");
-            }
-            else
-            if (i % 5 == 0)
-                System.out.println("Buzz");
-            else
-                System.out.println(i);
-        }
+    public static void main(String[] args) {
+
+        songs[] s = new songs[3];
+        s[0] = new songs("Markul", "Карусель");
+        s[1] = new songs("Lil Nas X", "INDUSTRY BABY");
+        s[2] = new songs("Offset", "Hit Em Hard");
+
+        carrier cr = new carrier("D", s);
+
+        playback executor = new playback("D", cr);
+        executor.setCn(true);
+        executor.play();
+        executor.play();
+        executor.play();
+        executor.setCn(false);
     }
 }
